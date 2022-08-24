@@ -69,10 +69,10 @@ exit 0
 fi
 
 source /root/scdomain
-SUB_DOMAIN=$peler
-DOMAIN=ridwan-vpn-xyz.ga
-CF_ID=ziexyuan@gmail.com
-CF_KEY=2fbf0739b65e1e4b6de396b11a9693fc6aa56
+SUB_DOMAIN=$asku
+DOMAIN=kennaixxy.me
+CF_ID=hiroyuki@gmail.com
+CF_KEY=2fbf0739b65e1e4b6de396b11a9693fcsxia56
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."

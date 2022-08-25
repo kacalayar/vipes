@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/kenDevXD/src/main > /root/tmp
+    curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -51,7 +51,7 @@ red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
 clear
-curl -sS https://raw.githubusercontent.com/myridwan/vip/ipuk/resources/ascii-home
+curl -sS https://raw.githubusercontent.com/kenDevXD/vip/main/resources/ascii-home
 echo "Add Domain"
 echo "Progress..."
 sleep 2
@@ -69,10 +69,10 @@ exit 0
 fi
 
 source /root/scdomain
-SUB_DOMAIN=$asku
-DOMAIN=kennaixxy.me
-CF_ID=hiroyuki@gmail.com
-CF_KEY=2fbf0739b65e1e4b6de396b11a9693fcsxia56
+SUB_DOMAIN=vip-${sub}.zaky-pedia.asia
+DOMAIN=zaky-pedia.asia
+CF_ID=zkendev@gmail.com
+CF_KEY=c2cfab62fee64eb70f18ad1db931907e132d0
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."

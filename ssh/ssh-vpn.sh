@@ -527,25 +527,25 @@ sudo netfilter-persistent save >/dev/null 2>&1
 sudo netfilter-persistent reload >/dev/null 2>&1
 
 # download script
-wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/usernew.sh" && chmod +x /usr/bin/usernew
-wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/trial.sh" && chmod +x /usr/bin/trial
-wget -q -O /usr/bin/hapus "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/hapus.sh" && chmod +x /usr/bin/hapus
-wget -q -O /usr/bin/member "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/member.sh" && chmod +x /usr/bin/member
-wget -q -O /usr/bin/delete "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/delete.sh" && chmod +x /usr/bin/delete
-wget -q -O /usr/bin/cek "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/cek.sh" && chmod +x /usr/bin/cek
-wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/restart.sh" && chmod +x /usr/bin/restart
-wget -q -O /usr/bin/renew "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/renew.sh" && chmod +x /usr/bin/renew
-wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/autokill.sh" && chmod +x /usr/bin/autokill
-wget -q -O /usr/bin/ceklim "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/ceklim.sh" && chmod +x /usr/bin/ceklim
-wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/tendang.sh" && chmod +x /usr/bin/tendang
-wget -q -O /usr/bin/port-dropbear "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/port-dropbear.sh" && chmod +x /usr/bin/port-dropbear
-#wget -q -O /usr/bin/port-ovpn "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/port-ovpn.sh" && chmod +x /usr/bin/port-ovpn
-wget -q -O /usr/bin/port-ssl "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/port-ssl.sh" && chmod +x /usr/bin/port-ssl
-wget -q -O /usr/bin/banner "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/banner/banner.sh" && chmod +x /usr/bin/banner
-wget -q -O /usr/bin/sshws "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/ins-sshws.sh" && chmod +x /usr/bin/sshws
-wget -q -O /usr/bin/ssh-menu "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/menu_all/ssh-menu.sh" && chmod +x /usr/bin/ssh-menu
-wget -q -O /usr/bin/port-wssl "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/port-ws-ssl.sh" && chmod +x /usr/bin/port-wssl
-wget -q -O /usr/bin/asu "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/asu.sh" && chmod +x /usr/bin/asu
+wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/usernew.sh" && chmod +x /usr/bin/usernew
+wget -q -O /usr/bin/trial "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/trial.sh" && chmod +x /usr/bin/trial
+wget -q -O /usr/bin/hapus "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/hapus.sh" && chmod +x /usr/bin/hapus
+wget -q -O /usr/bin/member "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/member.sh" && chmod +x /usr/bin/member
+wget -q -O /usr/bin/delete "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/delete.sh" && chmod +x /usr/bin/delete
+wget -q -O /usr/bin/cek "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/cek.sh" && chmod +x /usr/bin/cek
+wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/restart.sh" && chmod +x /usr/bin/restart
+wget -q -O /usr/bin/renew "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/renew.sh" && chmod +x /usr/bin/renew
+wget -q -O /usr/bin/autokill "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/autokill.sh" && chmod +x /usr/bin/autokill
+wget -q -O /usr/bin/ceklim "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/ceklim.sh" && chmod +x /usr/bin/ceklim
+wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/tendang.sh" && chmod +x /usr/bin/tendang
+wget -q -O /usr/bin/port-dropbear "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/port-dropbear.sh" && chmod +x /usr/bin/port-dropbear
+#wget -q -O /usr/bin/port-ovpn "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/port-ovpn.sh" && chmod +x /usr/bin/port-ovpn
+wget -q -O /usr/bin/port-ssl "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/port-ssl.sh" && chmod +x /usr/bin/port-ssl
+wget -q -O /usr/bin/banner "https://raw.githubusercontent.com/kenDevXD/vip/main/banner/banner.sh" && chmod +x /usr/bin/banner
+wget -q -O /usr/bin/sshws "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/ins-sshws.sh" && chmod +x /usr/bin/sshws
+wget -q -O /usr/bin/ssh-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/ssh-menu.sh" && chmod +x /usr/bin/ssh-menu
+wget -q -O /usr/bin/port-wssl "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/port-ws-ssl.sh" && chmod +x /usr/bin/port-wssl
+wget -q -O /usr/bin/asu "https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/asu.sh" && chmod +x /usr/bin/asu
 
 
 cat > /etc/cron.d/re_otm <<-END

@@ -122,7 +122,7 @@ fi
 sleep 1
 echo -e "[ ${green}INFO${NC} ] Setting config... "
 mv /etc/accel-ppp.conf.dist /etc/accel-ppp.conf > /dev/null 2>&1
-curl -sS "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/accel.conf" | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/accel-ppp.conf
+curl -sS "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/accel.conf" | openssl aes-256-cbc -d -a -pass pass:scvps07gg -pbkdf2 > /etc/accel-ppp.conf
 sed -i $MYIP2 /etc/accel-ppp.conf
 chmod +x /etc/accel-ppp.conf
 sleep 1
@@ -152,13 +152,13 @@ echo -e "[ ${green}INFO${NC} ] Reload netfilter... "
 sudo netfilter-persistent save > /dev/null 2>&1
 sudo netfilter-persistent reload > /dev/null 2>&1
 #input perintah sstp
-wget -q -O /usr/bin/add-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/add-sstp.sh" && chmod +x /usr/bin/add-sstp
-wget -q -O /usr/bin/del-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/del-sstp.sh" && chmod +x /usr/bin/del-sstp
-wget -q -O /usr/bin/cek-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/cek-sstp.sh" && chmod +x /usr/bin/cek-sstp
-wget -q -O /usr/bin/renew-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/renew-sstp.sh" && chmod +x /usr/bin/renew-sstp
-wget -q -O /usr/bin/trial-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/trial-sstp.sh" && chmod +x /usr/bin/trial-sstp
-wget -q -O /usr/bin/port-sstp "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/sstp/port-sstp.sh" && chmod +x /usr/bin/port-sstp
-wget -q -O /usr/bin/sstp-menu "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/menu_all/sstp-menu.sh" && chmod +x /usr/bin/sstp-menu
+wget -q -O /usr/bin/add-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/add-sstp.sh" && chmod +x /usr/bin/add-sstp
+wget -q -O /usr/bin/del-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/del-sstp.sh" && chmod +x /usr/bin/del-sstp
+wget -q -O /usr/bin/cek-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/cek-sstp.sh" && chmod +x /usr/bin/cek-sstp
+wget -q -O /usr/bin/renew-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/renew-sstp.sh" && chmod +x /usr/bin/renew-sstp
+wget -q -O /usr/bin/trial-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/trial-sstp.sh" && chmod +x /usr/bin/trial-sstp
+wget -q -O /usr/bin/port-sstp "https://raw.githubusercontent.com/kenDevXD/vip/main/sstp/port-sstp.sh" && chmod +x /usr/bin/port-sstp
+wget -q -O /usr/bin/sstp-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/sstp-menu.sh" && chmod +x /usr/bin/sstp-menu
 
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }

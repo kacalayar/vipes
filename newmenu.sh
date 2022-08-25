@@ -130,7 +130,7 @@ echo -e "\033[0;33mVersion : $(cat /opt/.ver) Update available to $serverV\e[0m"
 echo -e "\e[36m╒════════════════════════════════════════════════════╕\033[0m"
 echo ""
 echo -e "[ \033[0;31mChangelog\033[0m ]"
-curl -sS https://raw.githubusercontent.com/kenDevXD/scriptvps/main/clgshow
+curl -sS https://raw.githubusercontent.com/kenDevXD/vip/main/clgshow
 echo -e "
 "
 fi
@@ -176,7 +176,7 @@ if [[ $(cat /opt/.ver) = $serverV ]] > /dev/null 2>&1; then
     fi
 else
     if [[ $x -eq 999 ]]; then
-       wget -q -O /usr/bin/update-script "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/dll/system/update-script.sh" && chmod +x /usr/bin/update-script
+       wget -q -O /usr/bin/update-script "https://raw.githubusercontent.com/kenDevXD/vip/main/dll/system/update-script.sh" && chmod +x /usr/bin/update-script
        screen -S upds update-script
        menu
     elif [[ $x -eq 1 ]]; then

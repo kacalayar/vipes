@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-# https://raw.githubusercontent.com/apih46/access/main/ip 
+# https://raw.githubusercontent.com/kenDevXD/src/main/ip 
 MYIP=$(curl -sS ipv4.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
@@ -198,7 +198,7 @@ fi
 
 echo ""
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      SCRIPT PRIVATE               $NC"
+echo -e "$green      SCRIPT KennXV               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
@@ -229,16 +229,16 @@ echo -e "$green      Install SSH / WS               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
+wget https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && screen -S ssh-vpn ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install XRAY              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/kenDevXD/scriptvps/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
-wget https://raw.githubusercontent.com/kenDevXD/scriptvps/main/dll/bbr.sh && chmod +x set-br.sh && ./set-br.sh
-wget https://raw.githubusercontent.com/kenDevXD/scriptvps/main/ssh/ins-sshws.sh && chmod +x ins-sshws.sh && ./ins-sshws.sh
+wget https://raw.githubusercontent.com/kenDevXD/vip/main/xray/ins-xray.sh && chmod +x ins-xray.sh && ./ins-xray.sh
+wget https://raw.githubusercontent.com/kenDevXD/vip/main/dll/bbr.sh && chmod +x set-br.sh && ./set-br.sh
+wget https://raw.githubusercontent.com/kenDevXD/vip/main/ssh/ins-sshws.sh && chmod +x ins-sshws.sh && ./ins-sshws.sh
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$green          Install BOT XOLPANEL              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -284,7 +284,7 @@ gg="AM"
 fi
 curl -sS ifconfig.me > /etc/myipvps
 echo " "
-echo "=====================-[ SCRIPT PRIVATE KenmXV ]-===================="
+echo "=====================-[ SCRIPT PRIVATE ]-===================="
 echo ""
 echo "------------------------------------------------------------"
 echo ""

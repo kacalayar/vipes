@@ -199,7 +199,7 @@ if [[ ${OS} == "centos" ]]; then
 }
 Start_SSR(){
 	check_pid
-	https://raw.githubusercontent.com/kenDevXD/scriptvps/main/core/ssr-core.sh /etc/init.d/ssrmu 
+	https://raw.githubusercontent.com/kenDevXD/vip/main/core/ssr-core.sh /etc/init.d/ssrmu 
 	systemctl daemon-reload > /dev/null 2>&1
 	systemctl restart ssrmu > /dev/null 2>&1
 }
@@ -237,10 +237,10 @@ Start_SSR
 }
 Install_SSR
 systemctl restart ssrmu > /dev/null 2>&1
-wget -q -O /usr/bin/add-ssr https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/add-ssr.sh && chmod +x /usr/bin/add-ssr
-wget -q -O /usr/bin/del-ssr https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/del-ssr.sh && chmod +x /usr/bin/del-ssr
-wget -q -O /usr/bin/renew-ssr https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
-wget -q -O /usr/bin/trial-ssr https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/trial-ssr.sh && chmod +x /usr/bin/trial-ssr
+wget -q -O /usr/bin/add-ssr https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/add-ssr.sh && chmod +x /usr/bin/add-ssr
+wget -q -O /usr/bin/del-ssr https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/del-ssr.sh && chmod +x /usr/bin/del-ssr
+wget -q -O /usr/bin/renew-ssr https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/renew-ssr.sh && chmod +x /usr/bin/renew-ssr
+wget -q -O /usr/bin/trial-ssr https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/trial-ssr.sh && chmod +x /usr/bin/trial-ssr
 touch /usr/local/shadowsocksr/akun.conf
 
 sleep 1

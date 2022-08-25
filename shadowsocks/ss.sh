@@ -191,12 +191,12 @@ sudo iptables -I INPUT -m state --state NEW -m udp -p udp --dport 2443:3543 -j A
 sudo iptables-save > /etc/iptables.up.rules
 sudo ip6tables-save > /etc/ip6tables.up.rules
 
-wget -q -O /usr/bin/add-ss "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/add-ss.sh" && chmod +x /usr/bin/add-ss
-wget -q -O /usr/bin/del-ss "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/del-ss.sh" && chmod +x /usr/bin/del-ss
-wget -q -O /usr/bin/cek-ss "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/cek-ss.sh" && chmod +x /usr/bin/cek-ss
-wget -q -O /usr/bin/renew-ss "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/renew-ss.sh" && chmod +x /usr/bin/renew-ss
-wget -q -O /usr/bin/trial-ss "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/shadowsocks/trial-ss.sh" && chmod +x /usr/bin/trial-ss
-wget -q -O /usr/bin/ss-menu "https://raw.githubusercontent.com/kenDevXD/scriptvps/main/menu_all/ss-menu.sh" && chmod +x /usr/bin/ss-menu
+wget -q -O /usr/bin/add-ss "https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/add-ss.sh" && chmod +x /usr/bin/add-ss
+wget -q -O /usr/bin/del-ss "https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/del-ss.sh" && chmod +x /usr/bin/del-ss
+wget -q -O /usr/bin/cek-ss "https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/cek-ss.sh" && chmod +x /usr/bin/cek-ss
+wget -q -O /usr/bin/renew-ss "https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/renew-ss.sh" && chmod +x /usr/bin/renew-ss
+wget -q -O /usr/bin/trial-ss "https://raw.githubusercontent.com/kenDevXD/vip/main/shadowsocks/trial-ss.sh" && chmod +x /usr/bin/trial-ss
+wget -q -O /usr/bin/ss-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/ss-menu.sh" && chmod +x /usr/bin/ss-menu
 
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }

@@ -69,10 +69,10 @@ exit 0
 fi
 
 source /root/scdomain
-SUB_DOMAIN=vip-${sub}.zaky-pedia.asia
-DOMAIN=zaky-pedia.asia
-CF_ID=zkendev@gmail.com
-CF_KEY=c2cfab62fee64eb70f18ad1db931907e132d0
+SUB_DOMAIN=vip-${sub}.lowwqa.me
+DOMAIN=lowwqa.me
+CF_ID=lokias@gmail.com
+CF_KEY=c2cfab62fee64eb70f18ad1db931q07e132d0
 set -euo pipefail
 IP=$(curl -sS ifconfig.me);
 echo "Updating DNS for ${SUB_DOMAIN}..."

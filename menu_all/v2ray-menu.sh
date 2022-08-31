@@ -137,7 +137,7 @@ case "$x" in
    ;;
    2 | 02)
    clear
-   del-ws 
+   del-user 
    break
    ;;
    3 | 03)

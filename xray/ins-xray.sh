@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip > /root/tmp
+    curl -sS https://raw.githubusercontent.com/kacalayar/saose/main/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -22,7 +22,7 @@ BURIQ () {
 }
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip | grep $MYIP | awk '{print $2}')
+Name=$(curl -sS https://raw.githubusercontent.com/kacalayar/saose/main/ip | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -39,7 +39,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/kenDevXD/src/main/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/kacalayar/saose/main/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -461,7 +461,7 @@ EOF
 
 sleep 1
 echo -e "[ ${green}INFO$NC ] Installing bbr.."
-wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/kenDevXD/vip/main/dll/bbr.sh"
+wget -q -O /usr/bin/bbr "https://raw.githubusercontent.com/kacalayar/vipes/main/dll/bbr.sh"
 chmod +x /usr/bin/bbr
 bbr >/dev/null 2>&1
 rm /usr/bin/bbr >/dev/null 2>&1
@@ -482,22 +482,22 @@ systemctl restart trojan-go >/dev/null 2>&1
 
 sleep 1
 echo -e "[ ${green}ok${NC} ] Downloading files for trojan-go... "
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
-wget -q -O /usr/bin/cek-user "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
-wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
-wget -q -O /usr/bin/trial-ws "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/trial-ws.sh" && chmod +x /usr/bin/trial-ws
-wget -q -O /usr/bin/trial-vless "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/trial-vless.sh" && chmod +x /usr/bin/trial-vless
-wget -q -O /usr/bin/trial-tr "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/trial-tr.sh" && chmod +x /usr/bin/trial-tr
-wget -q -O /usr/bin/renewcert "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/cert.sh" && chmod +x /usr/bin/renewcert
-wget -q -O /usr/bin/v2ray-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/v2ray-menu.sh" && chmod +x /usr/bin/v2ray-menu
-wget -q -O /usr/bin/trojan-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/trojan-menu.sh" && chmod +x /usr/bin/trojan-menu
-wget -q -O /usr/bin/ssgrpc-menu "https://raw.githubusercontent.com/kenDevXD/vip/main/menu_all/ssgrpc-menu.sh" && chmod +x /usr/bin/ssgrpc-menu
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
-wget -q -O /usr/bin/del-ssws "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/del-ssws.sh" && chmod +x /usr/bin/del-ssws
-wget -q -O /usr/bin/renew-ssws "https://raw.githubusercontent.com/kenDevXD/vip/main/xray/renew-ssws.sh" && chmod +x /usr/bin/renew-ssws
+wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
+wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
+wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
+wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/del-ws.sh" && chmod +x /usr/bin/del-ws
+wget -q -O /usr/bin/cek-user "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
+wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-ws
+wget -q -O /usr/bin/trial-ws "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/trial-ws.sh" && chmod +x /usr/bin/trial-ws
+wget -q -O /usr/bin/trial-vless "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/trial-vless.sh" && chmod +x /usr/bin/trial-vless
+wget -q -O /usr/bin/trial-tr "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/trial-tr.sh" && chmod +x /usr/bin/trial-tr
+wget -q -O /usr/bin/renewcert "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/cert.sh" && chmod +x /usr/bin/renewcert
+wget -q -O /usr/bin/v2ray-menu "https://raw.githubusercontent.com/kacalayar/vipes/main/menu_all/v2ray-menu.sh" && chmod +x /usr/bin/v2ray-menu
+wget -q -O /usr/bin/trojan-menu "https://raw.githubusercontent.com/kacalayar/vipes/main/menu_all/trojan-menu.sh" && chmod +x /usr/bin/trojan-menu
+wget -q -O /usr/bin/ssgrpc-menu "https://raw.githubusercontent.com/kacalayar/vipes/main/menu_all/ssgrpc-menu.sh" && chmod +x /usr/bin/ssgrpc-menu
+wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
+wget -q -O /usr/bin/del-ssws "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/del-ssws.sh" && chmod +x /usr/bin/del-ssws
+wget -q -O /usr/bin/renew-ssws "https://raw.githubusercontent.com/kacalayar/vipes/main/xray/renew-ssws.sh" && chmod +x /usr/bin/renew-ssws
 sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
